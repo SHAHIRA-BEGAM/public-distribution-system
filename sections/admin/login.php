@@ -35,10 +35,4 @@ $result = $conn->query($sql);
 
 echo $results;
 $conn->close();
-
-
 ?>
-
-
-
-
