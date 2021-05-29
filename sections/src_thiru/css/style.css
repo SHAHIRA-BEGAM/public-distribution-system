@@ -1,0 +1,307 @@
+h1 {
+    font-family: Algerian;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: red;
+	line-height:1.5;
+	margin-top:20px;
+}
+a{
+	
+	text-decoration:none;
+font-family: Montserrat,sans-serif;
+    font-weight: 700;
+   
+    font-size: 19px;
+    color: black;
+		line-height:1.5;}
+		a:hover{color:red;text-decoration:none;}
+h2 {
+     font-family: Algerian;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 19px;
+    color: black;
+		line-height:1.5;
+}
+h6 {
+     font-family:Algerian;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 19px;
+    color: black;
+		
+}
+h3 {
+    font-family: Algerian;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: red;
+		line-height:1.5;
+		margin-top:20px;
+}
+
+footer													{  
+width:102.5%; height:60px; margin-left:-15px;
+background-color:black;color:white;}
+
+#foot #footcon{font-family: Montserrat,Arial,sans-serif;
+    font-weight: 700;
+
+	line-height:2;
+    font-size: 15px;
+    }
+	#body .card1												
+    {
+        border-radius: 2px;
+        display: inline-block;
+
+        height: 700px;
+		width:1030px;
+       
+       
+      box-shadow: 0px 0px 10px rgba(0, 0, 0,0.6);
+        background-color:#9dd47a;  
+        text-align:center;
+	margin-top:20px;
+	margin-bottom:20px;
+	opacity:0.8;
+		 
+    }
+		#body .card1:hover{
+     	box-shadow: 0px 42px 53px rgba(0, 0, 0, .35);
+		opacity:12;
+		
+		
+    }
+.mat-input{
+    margin: 2% auto;
+    width: 50%; 
+margin-top:70px; 
+background-color: #9dd47a;  
+}
+.mat-input-outer{
+    display: table;
+    width: 100%;
+    position: relative;
+	
+
+}
+.mat-input-outer input{
+    height: 50px;
+    border-radius: 0;
+    border: none;
+    width: 100%;    
+    padding: 0 15px;
+    font-family: calibri;
+    font-size: 20px;
+    font-style: italic;
+}
+
+
+
+
+.mat-input-outer label{
+    font-family: calibri;
+    font-size: 20px;
+    left: 15px;
+    position: absolute;
+    top: 18px;
+    font-style: italic;
+    transition: .2s;
+    color: navy;
+    cursor: text;
+    font-weight: normal;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+}
+.mat-input-outer .border{
+    height: 1px;
+    background: navy;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -ms-transition: .3s;
+}
+.mat-input-outer .border::before{
+    content: " ";
+    display: table;
+    height: 3px;
+    width: 0%;
+    background: transparent;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -ms-transition: .3s;
+    margin: 0 auto;
+	color:navy!important;
+}
+.mat-input-outer input:focus ~ .border{
+    background: transparent;
+}
+.mat-input-outer input:focus ~ .border::before{
+    width: 100%;
+    background: black;
+}
+.mat-input-outer input + label.active{
+    left: 5px;
+    top: -40px;
+    color: black;
+    margin-bottom:10px;
+    opacity: 10;
+   
+    font-size: 20px;
+    font-weight: 700;
+	font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+#body .cn{
+	font-family: Algerian;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: red;
+		line-height:1.5;
+		margin-top:20px;
+}
+#body .card2												
+    {
+        border-radius: 30px;
+        display: inline-block;
+
+        height: 300px;
+		width:300px;
+       
+       
+      box-shadow: 0px 0px 10px rgba(0, 0, 0,0.6);
+        background-color:#e9ddad;
+        text-align:center;
+	margin-top:20px;
+	margin-bottom:20px;
+	opacity:12;
+		 
+    }
+	#body .card3												
+    {
+        border-radius: 50px;
+        display: inline-block;
+
+        height: 100px;
+		width:300px;
+       
+       
+      box-shadow: 0px 0px 10px rgba(0, 0, 0,0.6);
+        background-color: black;
+        text-align:center;
+	
+	margin-bottom:20px;
+	opacity:12;
+		 
+    }
+.card2 #info{
+
+font-family: Montserrat,sans-serif;
+    font-weight: 700;
+   
+    font-size:18px;
+    color: black;
+		line-height:1.5;
+		}
+.card2 #quan{
+
+font-family: Montserrat,sans-serif;
+    font-weight: 900;
+   
+    font-size:15px;
+    color: red;
+		line-height:2;
+		}
+		.card2 #quant{
+
+font-family: Montserrat,sans-serif;
+    font-weight: 700;
+   
+    font-size:15px;
+    color: black;
+		line-height:1.5;
+		width:140%;
+		margin-left:-9px;
+		}
+		.card2 #kg{
+
+font-family: Montserrat,sans-serif;
+    font-weight: 700;
+   
+    font-size:15px;
+    color: black;
+		line-height:1.5;
+		width:200%;
+		margin-left:-26px;
+		
+		}
+		.card2 #litre{
+
+font-family: Montserrat,sans-serif;
+    font-weight: 700;
+   
+    font-size:15px;
+    color: black;
+		line-height:1.5;
+		width:280%;
+		margin-left:-30px;
+		
+		}
+		.card1 #done{
+
+font-family: Montserrat,sans-serif;
+    font-weight: 700;
+   
+    font-size:15px;
+    color: black;
+		line-height:1.5;
+		width:100%;
+		background-color:#dea08d;
+		border-radius: 50px;
+		
+		}
+		
+			
+		.card1 #done:hover{
+			
+			background-color:white;
+		}
+		
+.card1 #insert{
+
+font-family: Montserrat,sans-serif;
+    font-weight: 700;
+   margin-top:20px;
+    font-size:15px;
+    color: black;
+		line-height:1.5;
+		width:100%;
+		background-color:red;
+		border-radius: 50px;
+		
+		}
+		
+		
+		.card5 #output{
+			width:20px;
+			height:20px;
+			
+		}
+		.card5{
+
+font-family: Montserrat,sans-serif;
+    font-weight: 700;
+    height: 100px;
+		width:100px;
+    font-size:15px;
+    color: black;
+		line-height:1.5;
+		
+		background-color:#b9837e;
+		border-radius: 50px;
+		
+		}
+		

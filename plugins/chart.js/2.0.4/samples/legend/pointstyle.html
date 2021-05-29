@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Legend Point Style</title>
+    <script src="../../dist/Chart.bundle.js"></script>
+    <script src="../utils.js"></script>
+    <style>
+        canvas {
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+        .chart-container {
+            width: 500px;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+     
+        <div class="chart-container" style="width:100%;">
+            <canvas id="chart-legend-pointstyle"></canvas>
+        </div>
+    </div>
+    <script>
+	window.chartColors = {
+	red: 'rgb(251, 88, 76)',
+	orange: 'rgb(255, 159, 64)',
+	yellow: 'rgb(255, 205, 86)',
+	green: 'rgb(75, 192, 192)',
+	blue: 'rgb(114, 102, 186)',
+	purple: 'rgb(153, 102, 255)',
+	grey: 'rgb(206,222,244)'
+};
+
+        var color = Chart.helpers.color;
+        function createConfig(colorName) {
+            return {
+                type: 'line',
+               	data: {
+				labels: ["March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+				datasets: [{
+					label: "Income",
+					borderColor: window.chartColors.blue,
+					backgroundColor: window.chartColors.blue,
+					 borderWidth: 1,
+                        pointStyle: 'circle',
+                        pointRadius: 5,
+                        pointBorderColor: 'rgb(0, 0, 0)',
+					data: [0,25,0,60,20,90,25,50,10,75,40],
+				}, {
+					label: "Outcome",
+					borderColor: window.chartColors.red,
+					backgroundColor: window.chartColors.red,
+					 borderWidth: 1,
+                        pointStyle: 'circle',
+                        pointRadius: 5,
+                        pointBorderColor: 'rgb(0, 0, 0)',
+					data: [40,0,40,0,0,80,39,47,33,50,70],
+					
+				}]
+			},
+                options: {
+                    responsive: true,
+                    legend: {
+                        labels: {
+                            usePointStyle: false
+                        }
+                    },
+                    scales: {
+                        xAxes: [{
+                            display: true,
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Month'
+                            }
+                        }],
+                        yAxes: [{
+                            display: true,
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Value'
+                            }
+                        }]
+                    },
+                    title: {
+                        display: true,
+                        text: 'Normal Legend'
+                    }
+                }
+            };
+        }
+
+        function createPointStyleConfig(colorName) {
+            var config = createConfig(colorName);
+            config.options.legend.labels.usePointStyle = true;
+            config.options.title.text = 'Point Style Legend';
+            return config;
+        }
+
+        window.onload = function() {
+            [ {
+                id: 'chart-legend-pointstyle',
+                config: createPointStyleConfig('blue')
+            }].forEach(function(details) {
+                var ctx = document.getElementById(details.id).getContext('2d');
+                new Chart(ctx, details.config)
+            })
+        };
+    </script>
+</body>
+
+</html>

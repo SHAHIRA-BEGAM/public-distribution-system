@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Stepped Line Chart</title>
+    <script src="../../dist/Chart.bundle.js"></script>
+    <script src="../utils.js"></script>
+    <style>
+    canvas{
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+    }
+    </style>
+</head>
+
+<body>
+    <div style="width:75%;">
+        <canvas id="line"></canvas>
+    </div>
+    <script>
+        var config = {
+            type: 'line',
+            data: {
+                labels: ["January", "February", "March", "April", "May"],
+                datasets: [{
+                    label: "My First dataset",
+                    borderColor: window.chartColors.red,
+                    backgroundColor: window.chartColors.red,
+                    data: [
+                       10,20,30,40,50
+                    ],
+                    fill: false,
+                    steppedLine: true,
+                }]
+            },
+            options: {
+                responsive: true,
+                title:{
+                    display:true,
+                    text:'Chart.js Line Chart'
+                },
+                tooltips: {
+                    mode: 'index',
+                },
+                scales: {
+                    xAxes: [{
+                        display: true,
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Month'
+                        }
+                    }],
+                    yAxes: [{
+                        display: true,
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Value'
+                        },
+                    }]
+                }
+            }
+        };
+
+        window.onload = function() {
+            var ctx = document.getElementById("line").getContext("2d");
+            window.myLine = new Chart(ctx, config);
+        };
+    </script>
+</body>
+
+</html>

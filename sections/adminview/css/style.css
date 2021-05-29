@@ -1,0 +1,178 @@
+h1 {
+  font-family: Algerian;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: red;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+#body #admin {
+  font-family: Algerian;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: white;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+  background-color: #f9f9f9;
+  font-size: 20px;
+  color: navy !important;
+}
+table.table-bordered tbody th,
+table.table-bordered tbody td {
+  border-left-width: 0;
+  border-bottom-width: 0;
+  font-size: 15px !important;
+  color: navy !important;
+}
+.table-bordered td,
+.table-bordered th {
+  border: 6px solid white !important;
+}
+
+a {
+  text-decoration: none;
+  font-family: Montserrat, Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 19px;
+  color: black;
+  line-height: 1.5;
+}
+a:hover {
+  color: red;
+}
+h2 {
+  font-family: Algerian;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #1b0105;
+
+  line-height: 1.5;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #804751;
+  border-color: #007bff;
+}
+.btn {
+  display: inline-block;
+  font-weight: 900;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.5rem 0.75rem;
+  font-size: 1.5rem;
+  line-height: 1.25;
+  border-radius: 1.25rem;
+  transition: all 0.15s ease-in-out;
+}
+h3 {
+  font-family: Algerian;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: red;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+#body .card1 {
+  border-radius: 30px;
+  display: inline-block;
+
+  height: 200px;
+  width: 250px;
+
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+  background-color: pink;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+#body .card1:hover {
+  color: red;
+  opacity: 12;
+  box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.6);
+}
+#body .card2 {
+  border-radius: 30px;
+  display: inline-block;
+
+  height: 325px;
+  width: 1050px;
+  margin-left: 30px;
+
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+  background-color: #804751;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  opacity: 12;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #5286b9;
+  background-color: #fff;
+  background-image: none;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+.btn {
+  display: inline-block;
+  font-weight: 900;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.5rem 0.75rem;
+  font-size: 1.5rem;
+  line-height: 1.25;
+  border-radius: 0.25rem;
+  transition: all 0.15s ease-in-out;
+}
+#foot {
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+footer {
+  width: 100%;
+  height: 40px;
+}
+footer {
+  background: black;
+  color: white;
+}
+#foot #footcon {
+  font-family: Montserrat, Arial, sans-serif;
+  font-weight: 700;
+
+  line-height: 2;
+  font-size: 15px;
+}
